@@ -136,7 +136,7 @@ button {
 }
 
 .navContainer nav .logOutBtn {
-  padding: 3vh;
+  padding: 10px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -147,11 +147,107 @@ button {
 }
 
 nav ul {
-  display: flex;
+  display: inline-flex;
   justify-content: space-around;
-  padding: 3vh;
+  padding: 15px;
   width: 33%;
   color: white;
   list-style-type: none;
   text-decoration: none;
+}
+.burgerMenu {
+  display: none;
+  cursor: pointer;
+}
+.burgerMenu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+/* @media screen and (max-width: 1024px) {
+  .nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 3vh;
+    width: 60%;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav ul {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #085e5a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav li {
+    opacity: 0%;
+  }
+  .burgerMenu {
+    display: block;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+} */
+/* ContactUs */
+.contactContainer {
+  height: 91vh;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(
+    ellipse at left top,
+    rgba(8, 94, 90, 1) 0%,
+    rgba(26, 143, 137, 0.9) 59%,
+    rgba(203, 255, 252, 0.9) 100%
+  ); /*cbf5f3*/
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.contactContainer label {
+  padding: 3%;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+.contactContainer h2 {
+  padding: 3%;
+  padding-bottom: 7vh;
+  padding-left: 45%;
+  padding-right: 45%;
+  font-size: 26px;
+}
+.contactContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+}
+.contactContainer .eMessage {
+  width: 150px;
+}
+.contactContainer .submitbtn {
+  border-radius: 3%;
+  margin-top: 3%;
 }

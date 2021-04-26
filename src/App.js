@@ -4,6 +4,7 @@ import fire from "firebase";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./components/auth/Login";
 import Home from "./components/Home";
+import ContactUs from "./components/ContactUs";
 import "./App.css";
 import Navbar from "./components/UI/Navbar";
 
@@ -103,13 +104,25 @@ function App() {
     authListener();
   }, []);
 
+  // const navSlide = () => {
+  //   const burger = document.querySelector(".burgerMenu");
+  //   const nav = document.querySelector(".nav");
+
+  //   if (burger) {
+  //     burger.addEventListener("click", () => {
+  //       nav.classList.toggle("nav-active");
+  //     });
+  //   }
+  // };
+  // navSlide();
+
   return user ? (
     <>
       <Router>
         <Navbar handleLogOut={handleLogOut} />
-        <Home />
+        {/* <Home /> */}
         <Switch>
-          <Route path="./components/Home" component={Home} exact />
+          <Route path="/contact-us" component={ContactUs} exact />
         </Switch>
       </Router>
     </>

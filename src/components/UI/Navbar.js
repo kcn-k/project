@@ -18,7 +18,7 @@ const navbar = ({ handleLogOut }) => {
           <ul>
             <li>
               <Link
-                to="./../Home"
+                to="/home"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 Home
@@ -26,7 +26,7 @@ const navbar = ({ handleLogOut }) => {
             </li>
             <li>
               <Link
-                to="./../Home"
+                to="/home"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
                 Home
@@ -34,10 +34,10 @@ const navbar = ({ handleLogOut }) => {
             </li>
             <li>
               <Link
-                to="./../Home"
+                to="/contact-us"
                 style={{ color: "inherit", textDecoration: "none" }}
               >
-                Home
+                Contact Us
               </Link>
             </li>
             <li>
@@ -46,6 +46,11 @@ const navbar = ({ handleLogOut }) => {
               </button>
             </li>
           </ul>
+          <div className="burgerMenu">
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
+          </div>
         </nav>
       </div>
     </section>

@@ -4,7 +4,7 @@ import Navbar from "./UI/Navbar";
 const Home = () => {
   return (
     <section>
-      <body>
+      <body className="home">
         <div></div>
       </body>
     </section>
